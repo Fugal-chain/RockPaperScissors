@@ -48,10 +48,6 @@ socket.on('result', (data) => {
     console.log('Server data')
     document.getElementById('winner').textContent = `You chose: ${data.yourChoice}, opponent chose: ${data.opponentChoice} ${data.result}`;
     chosen = false;
-    // setTimeout(() => {
-    //     document.getElementById('winner').textContent = '';
-    //     removeColor();
-    // },3000);
 });
 
 socket.on('waiting', (msg) => {

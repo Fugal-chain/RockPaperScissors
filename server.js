@@ -2,7 +2,6 @@ const express = require('express');
 const http = require('http');
 const { Server } = require('socket.io');
 const path = require('path');
-const { ChildProcess } = require('child_process');
 const { log } = console;
 
 const app = express();
@@ -96,7 +95,7 @@ function findWinner(choice1, choice2) {
 
 server.listen(3020, (err) => {
     if(err){
-        log('Error stsrting the server!');
+        log('Error starting the server!');
     }else{
         log('server running in the port 3020')
     }
